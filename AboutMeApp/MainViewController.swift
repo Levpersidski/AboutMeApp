@@ -77,6 +77,27 @@ extension MainViewController {
                       and: "Please enter correct login and password")
             return
         }
-        
     }
 }
+
+// MARK: - Hide keyboard on tap
+extension MainViewController {
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        
+        if let touch = touches.first {
+            let currentPoint = touch.location(in: self.view)
+            
+            if userNameTextField.frame.contains(currentPoint) || passwordTextField.frame.contains(currentPoint) {
+        
+                return
+            }
+            
+            view.endEditing(true)
+        }
+    }
+}
+
+
+
