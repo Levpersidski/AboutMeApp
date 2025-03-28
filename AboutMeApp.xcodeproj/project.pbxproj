@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4326FFD12D9460480074E2F3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4326FFD02D9460480074E2F3 /* User.swift */; };
+		4326FFD32D95B6CC0074E2F3 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4326FFD22D95B6CC0074E2F3 /* UserInfoViewController.swift */; };
+		4326FFD82D96B5B50074E2F3 /* UIView+gradientExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4326FFD72D96B5B50074E2F3 /* UIView+gradientExtension.swift */; };
+		4326FFDA2D96BA3C0074E2F3 /* DescribingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4326FFD92D96BA3C0074E2F3 /* DescribingViewController.swift */; };
+		4326FFDC2D9734970074E2F3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4326FFDB2D9734970074E2F3 /* TabBarViewController.swift */; };
 		43D3B8C32D9009D20078C27B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D3B8C22D9009D20078C27B /* AppDelegate.swift */; };
 		43D3B8C52D9009D20078C27B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D3B8C42D9009D20078C27B /* SceneDelegate.swift */; };
 		43D3B8C72D9009D20078C27B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D3B8C62D9009D20078C27B /* MainViewController.swift */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4326FFD02D9460480074E2F3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4326FFD22D95B6CC0074E2F3 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		4326FFD72D96B5B50074E2F3 /* UIView+gradientExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+gradientExtension.swift"; sourceTree = "<group>"; };
+		4326FFD92D96BA3C0074E2F3 /* DescribingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescribingViewController.swift; sourceTree = "<group>"; };
+		4326FFDB2D9734970074E2F3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = AboutMeApp/ViewControllers/TabBarViewController.swift; sourceTree = SOURCE_ROOT; };
 		43D3B8BF2D9009D20078C27B /* AboutMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43D3B8C22D9009D20078C27B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43D3B8C42D9009D20078C27B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +49,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4326FFC92D945E7F0074E2F3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				43D3B8C62D9009D20078C27B /* MainViewController.swift */,
+				43D3B8D62D9012340078C27B /* GreetingViewController.swift */,
+				4326FFD22D95B6CC0074E2F3 /* UserInfoViewController.swift */,
+				4326FFD92D96BA3C0074E2F3 /* DescribingViewController.swift */,
+				4326FFDB2D9734970074E2F3 /* TabBarViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4326FFCA2D945F100074E2F3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				43D3B8C82D9009D20078C27B /* Main.storyboard */,
+				43D3B8CD2D9009D30078C27B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4326FFCB2D945F2C0074E2F3 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				43D3B8C22D9009D20078C27B /* AppDelegate.swift */,
+				43D3B8C42D9009D20078C27B /* SceneDelegate.swift */,
+				43D3B8D02D9009D30078C27B /* Info.plist */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		4326FFCD2D945FA50074E2F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4326FFD02D9460480074E2F3 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4326FFD62D96B5050074E2F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4326FFD72D96B5B50074E2F3 /* UIView+gradientExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		43D3B8B62D9009D20078C27B = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +115,12 @@
 		43D3B8C12D9009D20078C27B /* AboutMeApp */ = {
 			isa = PBXGroup;
 			children = (
-				43D3B8C22D9009D20078C27B /* AppDelegate.swift */,
-				43D3B8C42D9009D20078C27B /* SceneDelegate.swift */,
-				43D3B8C62D9009D20078C27B /* MainViewController.swift */,
-				43D3B8D62D9012340078C27B /* GreetingViewController.swift */,
-				43D3B8C82D9009D20078C27B /* Main.storyboard */,
+				4326FFC92D945E7F0074E2F3 /* ViewControllers */,
+				4326FFCD2D945FA50074E2F3 /* Models */,
+				4326FFD62D96B5050074E2F3 /* Extensions */,
+				4326FFCA2D945F100074E2F3 /* Storyboards */,
+				4326FFCB2D945F2C0074E2F3 /* System */,
 				43D3B8CB2D9009D30078C27B /* Assets.xcassets */,
-				43D3B8CD2D9009D30078C27B /* LaunchScreen.storyboard */,
-				43D3B8D02D9009D30078C27B /* Info.plist */,
 			);
 			path = AboutMeApp;
 			sourceTree = "<group>";
@@ -141,9 +196,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4326FFDA2D96BA3C0074E2F3 /* DescribingViewController.swift in Sources */,
+				4326FFD82D96B5B50074E2F3 /* UIView+gradientExtension.swift in Sources */,
 				43D3B8C72D9009D20078C27B /* MainViewController.swift in Sources */,
+				4326FFD32D95B6CC0074E2F3 /* UserInfoViewController.swift in Sources */,
+				4326FFDC2D9734970074E2F3 /* TabBarViewController.swift in Sources */,
 				43D3B8C32D9009D20078C27B /* AppDelegate.swift in Sources */,
 				43D3B8C52D9009D20078C27B /* SceneDelegate.swift in Sources */,
+				4326FFD12D9460480074E2F3 /* User.swift in Sources */,
 				43D3B8D72D9012340078C27B /* GreetingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +358,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F7X8B5584B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AboutMeApp/Info.plist;
+				INFOPLIST_FILE = AboutMeApp/System/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -326,7 +386,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F7X8B5584B;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AboutMeApp/Info.plist;
+				INFOPLIST_FILE = AboutMeApp/System/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
